@@ -1,6 +1,6 @@
 /dts-v1/;
 #include <nordic/nrf52840_qiaa.dtsi>
-#include "arduino_pro_micro_pins.dtsi"
+#include "typepak_cart_pins.dtsi"
 #include "typepak-pinctrl.dtsi"
 
 / {

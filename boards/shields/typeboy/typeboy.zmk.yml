@@ -3,7 +3,7 @@ id: typeboy
 name: TYPEBOY
 type: shield
 url: https://github.com/imstubtw/type-boy-40
-requires: [pro_micro]
+requires: [cart]
 features:
   - keys
   - studio

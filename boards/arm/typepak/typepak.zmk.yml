@@ -7,4 +7,4 @@ outputs:
   - usb
   - ble
 url: https://github.com/imstubtw/typepak
-exposes: [pro_micro]
+exposes: [cart]
