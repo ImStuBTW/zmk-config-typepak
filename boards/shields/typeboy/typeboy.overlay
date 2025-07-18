@@ -1,5 +1,6 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <dt-bindings/zmk/input_transform.h>
+#include <dt-bindings/input/input-event-codes.h>
 
 #include "typeboy.dtsi"
 
@@ -17,6 +18,14 @@
         sensitivity = "4x";
         sleep;
         no-taps;
+    };
+};
+
+/ {
+    glidepoint_listener {
+        compatible = "zmk,input-listener";
+        //device = <&glidepoint>;
+        // input-processors = <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
     };
 };
 
@@ -67,12 +76,5 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5) RC(5,0) RC(5,1) RC(5,2) RC(5,3) 
             , <&cart 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&cart 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
-    };
-
-    glidepoint_listener {
-        status = "okay";
-        compatible = "zmk,input-listener";
-        device = <&glidepoint>;
-        // input-processors = <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
     };
 };
