@@ -1,6 +1,4 @@
 #include <dt-bindings/zmk/matrix_transform.h>
-#include <dt-bindings/zmk/pointing.h>
-#include <input/processors.dtsi>
 
 #include "typeboy.dtsi"
 
@@ -18,9 +16,6 @@
         sensitivity = "4x";
         sleep;
         no-taps;
-        //x-invert;
-        //x-axis-z-min = <8>;
-        //y-axis-z-min = <8>;
     };
 };
 
@@ -28,15 +23,12 @@
     transform = <&default_transform>;
 };
 
-/ { 
-    glidepoint_listener: glidepoint_listener {
+/ {
+    glidepoint_listener {
         compatible = "zmk,input-listener";
-        status = "okay";
         device = <&glidepoint>;
-        //input-processors = <&zip_xy_scaler 4 2>;
-        // input-processors = <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
     };
-
+    
     chosen {
         zmk,kscan = &kscan0;
         zmk,physical-layout = &typeboy_layout;
