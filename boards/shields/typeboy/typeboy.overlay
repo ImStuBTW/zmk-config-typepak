@@ -2,11 +2,33 @@
 
 #include "typeboy.dtsi"
 
+&cart_spi {
+    status = "okay";
+    cs-gpios = <&cart 19 GPIO_ACTIVE_LOW>;
+
+    glidepoint: glidepoint@0 {
+        compatible = "cirque,pinnacle";
+        reg = <0>;
+        spi-max-frequency = <1000000>;
+        status = "okay";
+        dr-gpios = <&cart 5 (GPIO_ACTIVE_HIGH)>;
+
+        sensitivity = "4x";
+        sleep;
+        no-taps;
+    };
+};
+
 &typeboy_layout {
     transform = <&default_transform>;
 };
 
 / {
+    glidepoint_listener {
+        compatible = "zmk,input-listener";
+        device = <&glidepoint>;
+    };
+    
     chosen {
         zmk,kscan = &kscan0;
         zmk,physical-layout = &typeboy_layout;
