@@ -4,6 +4,8 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: Nicell
+      url-base: https://github.com/Nicell
     - name: cirque_trackpad
       url-base: https://github.com/petejohanson
   projects:
