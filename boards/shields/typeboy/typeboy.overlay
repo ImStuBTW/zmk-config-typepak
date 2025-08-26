@@ -57,7 +57,7 @@ nice_view_spi: &spi1 {};
         compatible = "zmk,kscan-gpio-matrix";
         wakeup-source;
 
-        diode-direction = "col2row";
+        diode-direction = "row2col";
 
         col-gpios
             = <&cart 13 GPIO_ACTIVE_HIGH>
