@@ -4,7 +4,7 @@
 
 &cart_spi {
     status = "okay";
-    cs-gpios = <&cart 19 GPIO_ACTIVE_LOW>;
+    cs-gpios = <&cart 16 GPIO_ACTIVE_LOW>;
 
     glidepoint: glidepoint@0 {
         compatible = "cirque,pinnacle";
@@ -22,7 +22,7 @@
 nice_view_spi: &spi1 {};
 
 &nice_view_spi {
-  cs-gpios = <&cart 6 GPIO_ACTIVE_HIGH>;
+  cs-gpios = <&cart 21 GPIO_ACTIVE_HIGH>;
 };
 
 &typeboy_layout {
