@@ -19,7 +19,7 @@
     };
 };
 
-nice_view_spi: &spi1 {};
+nice_view_spi: &cart_spi {};
 
 &nice_view_spi {
   cs-gpios = <&cart 23 GPIO_ACTIVE_HIGH>;
