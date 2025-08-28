@@ -1,9 +1,10 @@
 file_format: "1"
 id: typeboy
-name: TYPEBOY
+name: TypeBoy
 type: shield
-url: https://github.com/imstubtw/type-boy-40
+url: https://github.com/ImStuBTW/type-boy-40
 requires: [cart]
 features:
   - keys
   - studio
+  - display
