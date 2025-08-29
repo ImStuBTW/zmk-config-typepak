@@ -3,7 +3,7 @@ if SHIELD_TYPEBOY
 config ZMK_KEYBOARD_NAME
     default "Type Boy 40"
 
-onfig SPI
+config SPI
     default y
 
 endif
