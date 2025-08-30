@@ -11,5 +11,8 @@ config ZMK_DISPLAY
 
 config LS0XX
 	default y
+    
+config ZMK_DISPLAY_INVERT
+	default y
 
 endif
