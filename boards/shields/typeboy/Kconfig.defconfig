@@ -6,6 +6,9 @@ config ZMK_KEYBOARD_NAME
 config SPI
     default y
 
+config ZMK_DISPLAY
+	select LV_FONT_MONTSERRAT_28
+
 config LS0XX
 	default y
 
