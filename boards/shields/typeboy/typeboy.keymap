@@ -64,15 +64,15 @@
 
                 adjust_layer {
 // -------------------------------------------------------------------------
-// |BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |     |     |     |     |     |     |
-// |Sleep|     |     |     |     |     |     |VolDn|Mute |VolUp|     |     |
+// |BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |     |     |     |     |     |UNLCK|
+// |Sleep|     |     |     |     | RGB |     |VolDn|Mute |VolUp|     |     |
 // |     |     |     |     |     |     |     |Prev |Play |Next |     |     |
 // |     |     |     |     |     |     |     |     |     |     |     |     |
 // -------------------------------------------------------------------------
                         bindings = <
         &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &trans &trans       &trans     &trans       &trans &studio_unlock
-        &kp K_SLEEP &trans       &trans       &trans       &trans       &trans       &trans &kp C_VOL_DN &kp C_MUTE &kp C_VOL_UP &trans &trans
-        &trans      &trans       &trans       &trans       &trans       &trans       &trans &kp C_PREV   &kp C_PP   &kp C_NEXT   &trans &trans
+        &kp K_SLEEP &RGB_SPI     &RGB_BRI     &RGB_SAI     &RGB_HUI     &RGB_TOG     &trans &kp C_VOL_DN &kp C_MUTE &kp C_VOL_UP &trans &trans
+        &trans      &RGB_SPD     &RGB_BRD     &RGB_SAD     &RGB_HUD     &RGB_EFF     &trans &kp C_PREV   &kp C_PP   &kp C_NEXT   &trans &trans
         &trans      &trans       &trans       &trans       &trans       &trans       &trans &trans       &trans     &trans       &trans &trans
                         >;
                 };
