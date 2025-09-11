@@ -1,2 +1,5 @@
 config SHIELD_TYPEBOY
     def_bool $(shields_list_contains,typeboy)
+
+config ZMK_POINTING
+    default y

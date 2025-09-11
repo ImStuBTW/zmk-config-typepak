@@ -48,7 +48,7 @@
 &cart_spi {
     status = "okay";
 
-    cs-gpios = <&cart 23 GPIO_ACTIVE_HIGH>;
+    /*cs-gpios = <&cart 23 GPIO_ACTIVE_HIGH>;
 	ls0xx: ls0xx@0 {
 		compatible = "sharp,ls0xx";
 		label = "DISPLAY";
@@ -56,7 +56,20 @@
 		reg = <0>;
 		width = <160>;
 		height = <68>;
-	};
+	};*/
+
+    cs-gpios = <&cart 16 GPIO_ACTIVE_HIGH>;
+    glidepoint: glidepoint@0 {
+        compatible = "cirque,pinnacle";
+        reg = <0>;
+        spi-max-frequency = <1000000>;
+        status = "okay";
+        dr-gpios = <&cart 17 (GPIO_ACTIVE_HIGH)>;
+
+        sensitivity = "4x";
+        sleep;
+        no-taps;
+    };
 };
 
 &cart_serial { status = "disabled"; };
@@ -71,6 +84,12 @@
         zmk,physical-layout = &typeboy_layout;
 		zephyr,display = &ls0xx;
         zmk,underglow = &led_strip;
+    };/ {
+
+    glidepoint_listener {
+        compatible = "zmk,input-listener";
+        device = <&glidepoint>;
+        };
     };
 
     default_transform: keymap_transform_0 {
