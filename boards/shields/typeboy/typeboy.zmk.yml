@@ -4,7 +4,6 @@ name: TypeBoy
 type: shield
 url: https://github.com/ImStuBTW/type-boy-40
 requires: [cart]
-exposes: [spi_cirque]
 features:
   - keys
   - studio
