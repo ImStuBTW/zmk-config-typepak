@@ -89,7 +89,7 @@
     chosen {
         zmk,kscan = &kscan0;
         zmk,physical-layout = &typeboy_layout;
-		zephyr,display = &ls0xx;
+		//zephyr,display = &ls0xx;
         zmk,underglow = &led_strip;
     };
 
