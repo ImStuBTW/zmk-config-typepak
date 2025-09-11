@@ -83,7 +83,7 @@
         compatible = "zmk,input-listener";
         device = <&glidepoint>;
     };
-};/
+};
 
 / {
     chosen {
