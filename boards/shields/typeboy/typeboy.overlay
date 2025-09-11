@@ -83,7 +83,7 @@
         compatible = "zmk,input-listener";
         device = <&glidepoint>;
     };
-};
+};/
 
 / {
     chosen {
@@ -91,7 +91,7 @@
         zmk,physical-layout = &typeboy_layout;
 		zephyr,display = &ls0xx;
         zmk,underglow = &led_strip;
-    }; {
+    };
 
     default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
