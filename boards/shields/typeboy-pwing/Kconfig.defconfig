@@ -1,7 +1,7 @@
 if SHIELD_TYPEBOY
 
 config ZMK_KEYBOARD_NAME
-    default "Type Boy 40"
+    default "Type Boy P-Wing"
 
 config SPI
     default y
