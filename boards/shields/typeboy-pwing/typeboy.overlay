@@ -93,12 +93,12 @@
         diode-direction = "col2row";
 
         col-gpios
-            = <&cart 14 GPIO_ACTIVE_HIGH>
-            , <&cart 13 GPIO_ACTIVE_HIGH>
-            , <&cart 12 GPIO_ACTIVE_HIGH>
-            , <&cart 11 GPIO_ACTIVE_HIGH>
+            = <&cart 9 GPIO_ACTIVE_HIGH>
             , <&cart 10 GPIO_ACTIVE_HIGH>
-            , <&cart 9 GPIO_ACTIVE_HIGH>
+            , <&cart 11 GPIO_ACTIVE_HIGH>
+            , <&cart 12 GPIO_ACTIVE_HIGH>
+            , <&cart 13 GPIO_ACTIVE_HIGH>
+            , <&cart 14 GPIO_ACTIVE_HIGH>
             ;
 
         row-gpios
