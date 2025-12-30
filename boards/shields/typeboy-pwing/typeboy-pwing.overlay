@@ -1,6 +1,6 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <dt-bindings/led/led.h>
-#include "typeboy.dtsi"
+#include "typeboy-pwing.dtsi"
 
 // Define a pinctrl for the RGB LEDs.
 &pinctrl {
