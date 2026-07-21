@@ -6,5 +6,5 @@ arch: arm
 outputs:
   - usb
   - ble
-url: https://github.com/imstubtw/typepak
+url: https://github.com/imstubtw/typepak-advance
 exposes: [cart]
