@@ -1,5 +1,5 @@
-identifier: typepak-flipped-serial
-name: typepak-flipped-serial
+identifier: typepak
+name: typepak
 type: mcu
 arch: arm
 toolchain:

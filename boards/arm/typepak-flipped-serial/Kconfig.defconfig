@@ -1,7 +1,7 @@
-if BOARD_TYPEPAK_FLIPPED_SERIAL
+if BOARD_TYPEPAK
 
 config BOARD
-    default "typepak-flipped-serial"
+    default "typepak"
 
 if USB_DEVICE_STACK
 
@@ -13,7 +13,7 @@ endif # USB_DEVICE_STACK
 config BT_CTLR
     default BT
 
-config BOARD_TYPEPAK_FLIPPED_SERIAL_CHARGER
+config BOARD_TYPEPAK_CHARGER
     default y
 
-endif # BOARD_TYPEPAK_FLIPPED_SERIAL
+endif # BOARD_TYPEPAK

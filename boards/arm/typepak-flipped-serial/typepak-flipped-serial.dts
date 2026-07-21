@@ -1,11 +1,11 @@
 /dts-v1/;
 #include <nordic/nrf52840_qiaa.dtsi>
-#include "typepak_flipped_serial_cart_pins.dtsi"
+#include "typepak-flipped-serial_cart_pins.dtsi"
 #include "typepak-flipped-serial-pinctrl.dtsi"
 
 / {
-    model = "typepak-flipped-serial";
-    compatible = "typeboy,typepak-flipped-serial";
+    model = "typepak";
+    compatible = "typeboy,typepak";
 
     chosen {
         zephyr,code-partition = &code_partition;

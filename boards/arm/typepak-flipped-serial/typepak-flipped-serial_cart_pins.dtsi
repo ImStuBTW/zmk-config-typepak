@@ -1,6 +1,6 @@
 / {
     cart: connector {
-        compatible = "typepark-flipped-serial-cart";
+        compatible = "typepark-cart";
         #gpio-cells = <2>;
         gpio-map-mask = <0xffffffff 0xffffffc0>;
         gpio-map-pass-thru = <0 0x3f>;
@@ -33,7 +33,7 @@
     };
 
     cart_a: cart_a {
-        compatible = "typepak-flipped-serial-cart";
+        compatible = "typepak-cart";
         #gpio-cells = <2>;
         gpio-map-mask = <0xffffffff 0xffffffc0>;
         gpio-map-pass-thru = <0 0x3f>;
