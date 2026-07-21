@@ -8,7 +8,7 @@
 static int pinmux_typepak_flipped_serial_init(void) {
 #if (CONFIG_BOARD_TYPEPAK_FLIPPED_SERIAL)
     const struct device *p0 = DEVICE_DT_GET(DT_NODELABEL(gpio0));
-#if CONFIG_BOARD_TYPEPAK_CHARGER
+#if CONFIG_BOARD_TYPEPAK_FLIPPED_SERIAL_CHARGER
     gpio_pin_configure(p0, 5, GPIO_OUTPUT);
     gpio_pin_set(p0, 5, 0);
 #else
