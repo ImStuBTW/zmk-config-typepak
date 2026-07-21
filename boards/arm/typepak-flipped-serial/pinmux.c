@@ -5,7 +5,7 @@
 #include <zephyr/sys/sys_io.h>
 #include <zephyr/devicetree.h>
 
-static int pinmux_typepak_init(void) {
+static int pinmux_typepak_flipped_serial_init(void) {
 #if (CONFIG_BOARD_TYPEPAK_FLIPPED_SERIAL)
     const struct device *p0 = DEVICE_DT_GET(DT_NODELABEL(gpio0));
 #if CONFIG_BOARD_TYPEPAK_FLIPPED_SERIAL_CHARGER
