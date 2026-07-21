@@ -1,0 +1,10 @@
+file_format: "1"
+id: typepak-flipped-serial
+name: TypePak Advance
+type: board
+arch: arm
+outputs:
+  - usb
+  - ble
+url: https://github.com/imstubtw/typepak
+exposes: [cart]

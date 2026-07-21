@@ -1,0 +1,19 @@
+if BOARD_TYPEPAK_FLIPPED_SERIAL
+
+config BOARD
+    default "typepak-flipped-serial"
+
+if USB_DEVICE_STACK
+
+config USB_NRFX
+    default y
+
+endif # USB_DEVICE_STACK
+
+config BT_CTLR
+    default BT
+
+config BOARD_TYPEPAK_FLIPPED_SERIAL_CHARGER
+    default y
+
+endif # BOARD_TYPEPAK_FLIPPED_SERIAL
