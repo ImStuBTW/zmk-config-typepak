@@ -19,6 +19,6 @@
 #
 ---
 include:
-  - board: typepak
+  - board: typepak_flipped_serial
     shield: typeboy
     snippet: studio-rpc-usb-uart
