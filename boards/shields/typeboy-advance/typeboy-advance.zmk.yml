@@ -1,0 +1,10 @@
+file_format: "1"
+id: typeboy-advance
+name: TypeBoy Advance
+type: shield
+url: https://github.com/ImStuBTW/typeboy-advance
+requires: [cart]
+features:
+  - keys
+  - studio
+  - display
