@@ -1,2 +1,5 @@
-config SHIELD_TYPEBOY_advance
-    def_bool $(shields_list_contains,typeboy-advance)
+config SHIELD_TYPEBOY_ADVANCE_LEFT
+    def_bool $(shields_list_contains,typeboy-advance-left)
+
+config SHIELD_TYPEBOY_ADVANCE_RIGHT
+    def_bool $(shields_list_contains,typeboy-advance-right)

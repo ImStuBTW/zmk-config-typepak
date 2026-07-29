@@ -3,7 +3,7 @@
 / {
     typeboy_advance_layout: typeboy_advance_layout {
         compatible = "zmk,physical-layout";
-        display-name = "Type Boy 40";
+        display-name = "TypeBoy Advance";
 
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100    0    0       0     0     0>
