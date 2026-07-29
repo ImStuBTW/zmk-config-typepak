@@ -1,4 +1,4 @@
-#include "typeboy-advance.overlay"
+#include "typeboy-advance.dtsi"
 
 &default_transform {
     col-offset = <6>;
