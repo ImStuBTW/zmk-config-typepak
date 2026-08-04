@@ -19,10 +19,10 @@
 #
 ---
 include:
-  - board: typepak
+  - board: typepak-flipped-serial
     shield: typeboy
     snippet: studio-rpc-usb-uart
-  - board: typepak-flipped-serial
+  - board: typepak
     shield: typeboy-advance-left
     snippet: studio-rpc-usb-uart
   - board: typepak
