@@ -3,6 +3,9 @@ if SHIELD_TYPEBOY_ADVANCE_LEFT
 config ZMK_KEYBOARD_NAME
     default "TypeBoy Advance"
 
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+    
 endif
 
 if SHIELD_TYPEBOY_ADVANCE_LEFT || SHIELD_TYPEBOY_ADVANCE_RIGHT
