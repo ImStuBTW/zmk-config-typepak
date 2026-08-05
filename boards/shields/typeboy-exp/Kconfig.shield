@@ -1,2 +1,5 @@
-config SHIELD_TYPEBOY_EXP
-    def_bool $(shields_list_contains,typeboy-exp)
+config SHIELD_TYPEBOY_EXP_LEFT
+    def_bool $(shields_list_contains,typeboy-exp-left)
+
+config SHIELD_TYPEBOY_EXP_RIGHT
+    def_bool $(shields_list_contains,typeboy-exp-right)

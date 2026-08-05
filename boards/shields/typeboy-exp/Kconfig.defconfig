@@ -1,7 +1,14 @@
-if SHIELD_TYPEBOY_EXP
+if SHIELD_TYPEBOY_EXP_LEFT
 
 config ZMK_KEYBOARD_NAME
     default "TypeBoy Advance"
+
+endif
+
+if SHIELD_TYPEBOY_EXP_LEFT || SHIELD_TYPEBOY_EXP_RIGHT
+
+config ZMK_SPLIT
+    default y
 
 config SPI
     default y
