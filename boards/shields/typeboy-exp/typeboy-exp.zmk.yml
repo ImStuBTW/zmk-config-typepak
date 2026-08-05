@@ -1,8 +1,8 @@
 file_format: "1"
-id: typeboy
-name: TypeBoy
+id: typeboy-exp
+name: TypeBoy Advance
 type: shield
-url: https://github.com/ImStuBTW/type-boy-40
+url: https://github.com/ImStuBTW/typeboy-advance
 requires: [cart]
 features:
   - keys
