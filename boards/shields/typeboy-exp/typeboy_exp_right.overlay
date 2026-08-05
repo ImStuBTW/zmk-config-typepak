@@ -1,4 +1,4 @@
-#include "typeboy-exp.dtsi"
+#include "typeboy_exp.dtsi"
 
 &default_transform {
     col-offset = <6>;
