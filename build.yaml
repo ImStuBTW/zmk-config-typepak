@@ -22,9 +22,12 @@ include:
 #  - board: typepak-flipped-serial
 #    shield: typeboy-exp
 #    snippet: studio-rpc-usb-uart
-  - board: typepak-flipped-serial
-    shield: typeboy-advance_left
-    snippet: studio-rpc-usb-uart
+#  - board: typepak-flipped-serial
+#    shield: typeboy-advance_left
+#    snippet: studio-rpc-usb-uart
 #  - board: typepak
 #    shield: typeboy-advance-right
 #    snippet: studio-rpc-usb-uart
+  - board: typepak
+    shield: typeboy-pwing
+    snippet: studio-rpc-usb-uart
